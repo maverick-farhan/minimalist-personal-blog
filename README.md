@@ -1,0 +1,2 @@
+# Welcome to my blog (Minimalist design)
+## In this blog I love to write about my personal software development journey from projects to products having live active users from all over the world (Inshallah)
