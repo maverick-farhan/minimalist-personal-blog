@@ -134,7 +134,7 @@ div.container-blog div.blog{
 h4.date{
     font-family:var(--global-font);
     text-transform:lowercase;
-    color:#999999;
+    color:#777777;
 }
 h4.topics a{
     font-family:var(--global-font);

@@ -33,6 +33,46 @@ include "header.php";
                 <h4 class="date">2024.03</h4>
                 <h4 class="topics"><a href="#">Async Js fundamentals</a></h4>
             </div>
+            <div class="blog">
+                <h4 class="date">2024.03</h4>
+                <h4 class="topics"><a href="#">Async Js fundamentals</a></h4>
+            </div>
+            <div class="blog">
+                <h4 class="date">2024.03</h4>
+                <h4 class="topics"><a href="#">Async Js fundamentals</a></h4>
+            </div>
+            <div class="blog">
+                <h4 class="date">2024.03</h4>
+                <h4 class="topics"><a href="#">Async Js fundamentals</a></h4>
+            </div>
+            <div class="blog">
+                <h4 class="date">2024.03</h4>
+                <h4 class="topics"><a href="#">Async Js fundamentals</a></h4>
+            </div>
+            <div class="blog">
+                <h4 class="date">2024.03</h4>
+                <h4 class="topics"><a href="#">Async Js fundamentals</a></h4>
+            </div>
+            <div class="blog">
+                <h4 class="date">2024.03</h4>
+                <h4 class="topics"><a href="#">Async Js fundamentals</a></h4>
+            </div>
+            <div class="blog">
+                <h4 class="date">2024.03</h4>
+                <h4 class="topics"><a href="#">Async Js fundamentals</a></h4>
+            </div>
+            <div class="blog">
+                <h4 class="date">2024.03</h4>
+                <h4 class="topics"><a href="#">Async Js fundamentals</a></h4>
+            </div>
+            <div class="blog">
+                <h4 class="date">2024.03</h4>
+                <h4 class="topics"><a href="#">Async Js fundamentals</a></h4>
+            </div>
+            <div class="blog">
+                <h4 class="date">2024.03</h4>
+                <h4 class="topics"><a href="#">Async Js fundamentals</a></h4>
+            </div>
         </div>
 
         <footer class="footer">
