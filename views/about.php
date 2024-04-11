@@ -16,18 +16,19 @@ include "header.php";
         </li>
         </ul>
     </header>
-<main class="main">
+<main class="main" id="about-main">
         <header class="main">
         <h1 class="main-title">@About</h1>
         </header>
         <div class="about">
 
+        <div class="image"><img src="farhan.jpg" alt=""></div>
 <?php include "./config.php";
 $sql = "select * from about";
 $result = mysqli_query($connect,$sql);
 if(mysqli_num_rows($result)>0){
     while($row=mysqli_fetch_assoc($result)){
-        echo "<p class='about_para'>".$row["aboutme"]."</p>";
+        echo "<p class='about_para'>".$row["aboutme"].".</p>";
     }
 }
 ?>

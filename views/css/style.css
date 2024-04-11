@@ -226,9 +226,58 @@ section.blog{
     text-align:left;
    font-size:21px; 
 }
-
+div.about{
+    width:100%;
+    min-height:50vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+}
+div.image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:1rem;
+}
+div.image img{
+    width:60%;
+    height:auto;
+    border-radius:10px;
+}
 p.about_para{
     font-family:var(--global-font);
     font-size:1.2rem;
     color:var(--light-mode);
 }
+
+div.contact{
+    width:100%;
+    min-height:50vh;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+div.contact .icon{
+    width:3rem;
+    border-radius:50%;
+    height:3rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    outline:1px solid var(--light-mode);
+    text-align:center;
+    cursor:pointer;
+    transition:all .23s ease;
+}
+
+div.contact .icon> i{
+    font-size:1.5rem;
+    color:var(--light-mode);
+}
+/* div.contact .icon:hover{
+    font-size:1.5rem;
+    background-color:var(--light-mode);
+    color:var(--dark-mode);
+} */

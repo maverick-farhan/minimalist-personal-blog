@@ -1,10 +1,17 @@
 <?php 
+session_start();
 include "header.php";
 include "./config.php";
+// if(isset($_SESSION["username"])){
+// // header("Location: todo.php");
+// header("location: posts.php");
+// }
+
+
 ?>
 <body>
 <header class="header" id="header">      
-     <h1 class="logo"><a href="index.php">mfm.</a></h1> 
+     <h1 class="logo"><a href="<?php isset($_SESSION["username"])?'posts.php':'index.php';?>">mfm.</a></h1> 
      <ul class="navbar">
         <li class="navlist"><a href="logout.php">Logout</a></li>
         <li class="navlist"><a href="add_posts.php">Add Post</a></li>
@@ -17,6 +24,7 @@ include "./config.php";
     <th>Title</th>
     <th>Description</th>
     <th>Date</th>
+    <th>Controls</th>
 </tr>
 <?php 
 $limit = 5;
@@ -36,6 +44,8 @@ if(mysqli_num_rows($result)>0){
     echo "<td>$row[ptitle]</td>";
     echo "<td>$row[pdesc]</td>";
     echo "<td>$row[pdate]</td>";
+    echo '<td class="control-btn">
+    <a href="delete.php?id='.$row["pid"].'"><i class="ri-delete-bin-fill"></i></a><a href="edit.php?id='.$row["pid"].'"><i class="ri-quill-pen-fill"></i></a> </td>';
     echo "</tr>";
 }
 }

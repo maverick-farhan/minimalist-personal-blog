@@ -19,6 +19,13 @@ include "header.php";
         <header class="main">
         <h1 class="main-title">@Contact</h1>
         </header>
+        <div class="contact">
+            <div class="twitter icon"><i class="ri-twitter-x-line"></i></div>
+            <div class="instagram icon"><i class="ri-instagram-line"></i></div>
+            <div class="facebook icon"><i class="ri-facebook-line"></i></div>
+            <div class="linkedin icon"><i class="ri-linkedin-line"></i></div>
+            <div class="github icon"><i class="ri-github-line"></i></div>
+        </div>
     </main>
 <?php 
 include "footer.php";
