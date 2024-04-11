@@ -22,6 +22,15 @@ include "header.php";
         </header>
         <div class="about">
 
+<?php include "./config.php";
+$sql = "select * from about";
+$result = mysqli_query($connect,$sql);
+if(mysqli_num_rows($result)>0){
+    while($row=mysqli_fetch_assoc($result)){
+        echo "<p class='about_para'>".$row["aboutme"]."</p>";
+    }
+}
+?>
         </div>
     </main>
 <?php 

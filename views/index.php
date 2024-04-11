@@ -32,7 +32,7 @@ include "header.php";
         <?php 
 
 include "./config.php";
-$limit = 5;
+$limit = 7;
 if(isset($_GET["page"])){
 $page = $_GET["page"];
 }

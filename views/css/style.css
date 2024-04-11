@@ -226,3 +226,9 @@ section.blog{
     text-align:left;
    font-size:21px; 
 }
+
+p.about_para{
+    font-family:var(--global-font);
+    font-size:1.2rem;
+    color:var(--light-mode);
+}
