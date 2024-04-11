@@ -40,7 +40,9 @@ else{
 $page = 1;
 }
 $offset = ($page - 1) * $limit;
-        $sql = "select pid,pdate,ptitle from posts limit {$offset},{$limit};";
+if(isset($_POST["submit"])){
+    $search_term = $_POST["search"];
+    $sql = "select * from posts where ptitle like '%$search_term%' or pdesc like '%$search_term%'";
         $result = mysqli_query($connect,$sql);
         if(mysqli_num_rows($result)>0){
             while($row = mysqli_fetch_assoc($result)){
@@ -53,6 +55,10 @@ $offset = ($page - 1) * $limit;
             <?php
             }
         }
+    }
+    else{
+        echo "<h4 class='date'>No Record Found</h4>";
+    }
         ?>
         </div>
 <?php 
@@ -63,7 +69,7 @@ if(mysqli_num_rows($pagination_result)>0){
     $total_pages = ceil($total_records / $limit);
     echo '<ul class="pagination">';
     if($page>1){
-    echo '<li class="page-list"><a href="index.php?page='.($page - 1).'"><i class="ri-arrow-left-s-line"></i></a></li>';
+    echo '<li class="page-list"><a href="search.php?page='.($page - 1).'"><i class="ri-arrow-left-s-line"></i></a></li>';
     
     }
     for($i = 1;$i<=$total_pages;$i++){
@@ -74,10 +80,10 @@ if(mysqli_num_rows($pagination_result)>0){
         $active = "";
     }
 
-       echo  '<li class="page-list '.$active.'"><a href="index.php?page='.$i.'">'.$i.'</a></li>';
+       echo  '<li class="page-list '.$active.'"><a href="search.php?page='.$i.'">'.$i.'</a></li>';
     }
     if($total_pages>$page){
-    echo '<li class="page-list"><a href="index.php?page='.($page + 1).'"><i class="ri-arrow-right-s-line"></i></a></li>';
+    echo '<li class="page-list"><a href="search.php?page='.($page + 1).'"><i class="ri-arrow-right-s-line"></i></a></li>';
     }
     echo "</ul>";
 }
