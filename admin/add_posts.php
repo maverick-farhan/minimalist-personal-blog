@@ -20,7 +20,7 @@ else{
 ?>
 <body>
 <header class="header" id="header">      
-     <h1 class="logo"><a href="index.php">mfm.</a></h1> 
+     <h1 class="logo"><a href="<?php isset($_SESSION["username"])?'posts.php':'index.php';?>">mfm.</a></h1> 
 </header>
 <main>
      <form action="<?php $_SERVER["PHP_SELF"] ?>" method="post">

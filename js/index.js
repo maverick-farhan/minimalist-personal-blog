@@ -19,6 +19,12 @@ lightBtn.style.display = "block";
 searchInput.style.borderBottomColor = "#D0CFCF";
 });
 
+if(screen.width<=810){
+    searchBtn.addEventListener("click",(e)=>{
+        searchInput.style.display="inline-block";
+    });
+}else{
 searchBtn.addEventListener("mouseover",(e)=>{
     searchInput.style.display="inline-block";
 });
+}
